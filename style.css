@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#addbookinstruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-scn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all {
+  width: 80%;
+  margin: 15px auto;
+  padding: 30px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  align-items: center;
+  margin-left: 18%;
+}
+
+.head li {
+  text-decoration: none;
+}
+
+.nav-list li {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 18px;
+  width: 120px;
+  text-align: center;
+}
+
+.nav-menu-scn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5vh;
+  border-radius: 15px;
+  padding: 1rem;
+  border: 2px solid #008080;
+  margin: 5px 10px 5px 10px;
+}
+
+.nav-menu-scn ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.nav-menu-scn ul li a {
+  text-decoration: none;
+  padding-right: 5px;
+  color: #008080;
+  border-right: 2px solid #008080;
+}
+
+.nav-menu-scn ul li a:hover {
+  color: #006400;
+  border-right: 2px solid #006400;
+}
+
+.main-class {
+  width: 100%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+footer p {
+  margin: 0;
+  line-height: 60px;
+}
+
+.contact-info ul li {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.nav-list li:hover {
+  background-color: #008080;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addItem {
+  flex-basis: 28%;
+  margin-left: 56.4%;
+}
+
+.addItem:hover {
+  background-color: #006400;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #008080;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #008080;
+}
+
+.bookslistadd input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  flex-basis: 70%;
+}
+
+.bookslistadd form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookheader {
+  margin-left: 13%;
+}
+
+#writer {
+  margin-left: 13%;
+}
+
+.contact-info {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.eraseItem {
+  border: none;
+  color: #fff;
+  background-color: #008080;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.eraseItem:hover {
+  background-color: red;
+}
+
+.showRw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.localDateTime {
+  float: right;
+  margin-right: 2px;
+  padding-top: 5px;
+}
