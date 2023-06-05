@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (email !== email.toLowerCase()) {
       const errorMessage = document.createElement('p');
       errorMessage.classList.add('error-message');
-      errorMessage.textContent = 'Email address must be in lowercase.';
+      errorMessage.textContent = 'Error: Email address must be in lowercase.';
       const existingErrorMessage = submitButton.nextElementSibling;
       if (existingErrorMessage && existingErrorMessage.classList.contains('error-message')) {
         existingErrorMessage.remove();

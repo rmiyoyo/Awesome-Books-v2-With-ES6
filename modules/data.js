@@ -22,7 +22,7 @@ export default class Books {
         }, 3000);
       }
       if (writer === '') {
-        message.innerHTML = 'Please enter writer of book';
+        message.innerHTML = "Please enter book's writer";
         message.style.color = 'tomato';
         message.style.fontWeight = 'bold';
         e.preventDefault();
