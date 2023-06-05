@@ -1,7 +1,7 @@
 {
   "name": "awesome-books-v2-with-es6",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>",
   "main": "app.js",
   "dependencies": {
     "abab": "^2.0.6",
@@ -427,5 +427,14 @@
   },
   "keywords": [],
   "writer": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmiyoyo/Awesome-Books-v2-With-ES6.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/rmiyoyo/Awesome-Books-v2-With-ES6/issues"
+  },
+  "homepage": "https://github.com/rmiyoyo/Awesome-Books-v2-With-ES6#readme"
 }
