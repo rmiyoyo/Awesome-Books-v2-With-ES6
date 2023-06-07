@@ -7,11 +7,11 @@ export default class Book {
   }
 }
 
-export function selectItems() {
+export const selectItems = () => {
   const bookStorage = getBookStorage();
   let markup = '';
 
-  function removeItem() {
+  const removeItem = () => {
     const deleteElement = [...document.getElementsByClassName('eraseItem')];
     deleteElement.forEach((item) => {
       item.addEventListener('click', (e) => {
@@ -20,7 +20,7 @@ export function selectItems() {
         selectItems();
       });
     });
-  }
+  };
 
   bookStorage.forEach((item, i) => {
     markup += `<div class="showRw">
@@ -32,9 +32,9 @@ export function selectItems() {
 
   document.querySelector('.all').innerHTML = markup;
   removeItem();
-}
+};
 
-export function addBook(bookheader, writer) {
+export const addBook = (bookheader, writer) => {
   const message = document.querySelector('.displayError');
 
   if (bookheader === '') {
@@ -61,4 +61,4 @@ export function addBook(bookheader, writer) {
   updateBookStorage(newBook);
   selectItems();
   document.querySelector('.updateItems').reset();
-}
+};
