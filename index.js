@@ -1,22 +1,29 @@
-import Books from './modules/bookmanager.js';
+import { addBook, selectItems } from './modules/books.js';
 import * as dateTime from './modules/time.js';
 
-const localDateTime = document.querySelector('.localDateTime');
+const localDateTime = document.querySelector('.time');
 localDateTime.innerHTML = `${dateTime.localDate} ${dateTime.hour}:${dateTime.min}`;
 
-const book = new Books();
+document.querySelector('.addItem').addEventListener('click', () => {
+  const bookheader = document.getElementById('bookheader').value;
+  const writer = document.getElementById('writer').value;
+  addBook(bookheader, writer);
+});
 
-book.updateItems();
-book.selectItems();
-
-const bookList = document.querySelector('.nav-list');
+// Hide the add book section and contact section on initial load
 const booksLists = document.querySelector('.bookslistadd');
 const getInTouch = document.querySelector('.contact-info');
+booksLists.style.display = 'none';
+getInTouch.style.display = 'none';
+
+selectItems();
+
+const bookList = document.querySelector('.nav-list');
 const seeBooks = document.querySelector('.display-books');
 
 bookList.addEventListener('click', (e) => {
   if (e.target.innerHTML === 'List') {
-    book.selectItems();
+    selectItems();
     booksLists.style.display = 'none';
     getInTouch.style.display = 'none';
     seeBooks.style.display = 'block';

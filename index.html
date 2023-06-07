@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.js"></script>
     <title>Raphael Miyoyo: Awesome Books</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
     <header>
-      <nav class="nav-menu-scn">
-        <div class="logo">Awesome Books</div>
-        <ul class="nav-list">
-          <li class="nav-list-item">List</li>
-          <li class="nav-list-item">Add New</li>
-          <li class="nav-list-item">Contact</li>
-        </ul>
-      </nav>
+        <nav class="nav-menu">
+            <div class="logo"><a href="#" class="logo-tag">Awesome Books</a></div>
+            <ul class="nav-list">
+                <li class="nav-list-item">List</li>
+                <li class="nav-list-item">Add New</li>
+                <li class="nav-list-item">Contact</li>
+            </ul>
+        </nav>
     </header>
-    <div class="localDateTime"></div>
+    <div class="time"></div>
     <main class="main-class">
-      <section class="display-books">
-        <h1 class="heading-scn">All Awesome Books</h1>
-        <section class="all"></section>
-      </section>
-      <section class="contact-info">
-        <h2 class="head">Contact Information</h2>
-        <p class="contact-details"> For more information, please contact us at:</p>
-        <ul>
-          <li>Email: info@awesomebooks.com</li>
-          <li>Phone: 555-1234</li>
-          <li>Address: 123 Main St, Nairobi Kenya</li>
-        </ul>
-      </section>
-      <section class="bookslistadd" class="content-section">
-        <h2 id="addbookinstruction">Add a New Book</h2>
-        <form action="" class="updateItems">
-          <input type="text" id="bookheader" placeholder="Title" class="addspace" required/>
-        <br />
-        <input
-          type="text"
-          id="writer"
-          placeholder="Author"
-          class="addspace"
-          required
-        />
-        <br />
-        <button type="button" class="addItem">Add Book</button>
-        <p class="displayError"></p>
-      </form>
-    </section>
+        <section class="display-books">
+            <h1 class="main-header">All Awesome Books</h1>
+            <section class="all"></section>
+        </section>
+        <section class="contact-info">
+            <h2 class="head">Contact Information</h2>
+            <p class="contact-details"> For more information, please contact us at:</p>
+            <ul>
+                <li>Email: info@awesomebooks.com</li>
+                <li>Phone: 555-1234</li>
+                <li>Address: 123 Main St, Nairobi Kenya</li>
+            </ul>
+        </section>
+        <section class="bookslistadd" class="content-section">
+            <h2 id="addbookinstruction">Add a New Book</h2>
+            <form action="" class="updateItems">
+                <input type="text" id="bookheader" placeholder="Title" class="addspace" required/>
+                <br />
+                <input type="text" id="writer" placeholder="Author" class="addspace" required/>
+                <br />
+                <button type="button" class="addItem">Add Book</button>
+                <p class="displayError"></p>
+            </form>
+        </section>
     </main>
     <footer>
-      <div class="container">
-        <p>&copy; 2023 Raphael Miyoyo. All Rights Reserved.</p>
-      </div>
-    </footer> 
-    <script type="module" src="index.js"></script>
-  </body>
+        <div class="container">
+            <p>&copy; 2023 Raphael Miyoyo. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>  
+</body>
 </html>

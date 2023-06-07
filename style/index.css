@@ -1,16 +1,82 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+* {
+  color: sienna;
+  font-family: 'Lato', sans-serif;
 }
 
-#addbookinstruction {
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-.heading-scn {
+.nav-menu {
+  height: 4vh;
+  border-radius: 15px;
+  padding: 1rem;
+  border: 2px solid olive;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  font-size: 20px;
+}
+
+.logo-tag {
+  text-decoration: none;
+  color: sienna;
+}
+
+.logo-tag:hover {
+  color: darkcyan;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.contact-info ul li {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.nav-list li:hover {
+  background-color: #008080;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: sienna;
+}
+
+.menu-link:hover {
+  color: darkcyan;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.time {
+  margin: 5px;
+  text-align: center;
+  float: right;
+  font-size: 18px;
+}
+
+#addbookinstruction {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,66 +88,8 @@ body {
   padding: 30px;
 }
 
-.nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.head {
-  align-items: center;
-  margin-left: 18%;
-}
-
-.head li {
-  text-decoration: none;
-}
-
-.nav-list li {
-  list-style-type: none;
-  padding: 20px;
-  font-size: 18px;
-  width: 120px;
-  text-align: center;
-}
-
-.nav-menu-scn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 1.5vh;
-  border-radius: 15px;
-  padding: 1rem;
-  border: 2px solid #008080;
-  margin: 5px 10px 5px 10px;
-}
-
-.nav-menu-scn ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-.nav-menu-scn ul li a {
-  text-decoration: none;
-  padding-right: 5px;
-  color: #008080;
-  border-right: 2px solid #008080;
-}
-
-.nav-menu-scn ul li a:hover {
-  color: #006400;
-  border-right: 2px solid #006400;
-}
-
 .main-class {
   width: 100%;
-}
-
-.logo {
-  font-size: 30px;
-  font-weight: bold;
 }
 
 footer {
@@ -96,18 +104,6 @@ footer {
 footer p {
   margin: 0;
   line-height: 60px;
-}
-
-.contact-info ul li {
-  margin-left: 30px;
-  font-size: 18px;
-}
-
-.nav-list li:hover {
-  background-color: #008080;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .addItem {
@@ -206,6 +202,6 @@ input:focus {
 
 .localDateTime {
   float: right;
-  margin-right: 15px;
+  margin-right: 2px;
   padding-top: 5px;
 }
