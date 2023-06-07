@@ -1,7 +1,8 @@
-import { DateTime } from './luxon.js';
+/* eslint-disable no-undef */
 
-const localDate = DateTime.local().toLocaleString(DateTime.DATE_MED);
-const { hour } = DateTime.local().c;
-const min = DateTime.local().c.minute;
-
-export { localDate, hour, min };
+const localDate = luxon.DateTime.local().toLocaleString(luxon.DateTime.DATE_MED);
+const { hour } = luxon.DateTime.local().c;
+const min = luxon.DateTime.local().c.minute;
+export {
+  localDate, hour, min,
+};
